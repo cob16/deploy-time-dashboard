@@ -11,7 +11,7 @@ export class CommitCircle extends React.Component {
 
     render() {
         return (
-            <Circle highlightColor={this.props.highlightColor}>
+            <Circle borderColor={this.props.highlightColor}>
                 <p style={{
                     fontFamily: fonts.fontFamily,
                     textAlign: 'center',

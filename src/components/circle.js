@@ -4,7 +4,8 @@ import {colours} from "../style";
 export class Circle extends React.Component {
 
     static defaultProps = {
-        highlightColor: 'transparent'
+        borderColor: 'transparent',
+        backgroundColor: colours.shapeUnimportant
     }
 
     render() {
@@ -14,9 +15,9 @@ export class Circle extends React.Component {
                 height: 100,
                 borderRadius: 100/2,
                 borderStyle: 'solid',
-                borderColor: this.props.highlightColor,
+                borderColor: this.props.borderColor,
                 borderWidth: 2,
-                backgroundColor: colours.shapeUnimportant,
+                backgroundColor: this.props.backgroundColor,
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
