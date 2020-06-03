@@ -1,6 +1,6 @@
 import React from 'react';
 import { CommitCircle } from "../components/commitCircle";
-import * as colour from "../colours" ;
+import { colours } from "../style" ;
 
 export default {
   title: 'CommitCircle',
@@ -12,9 +12,9 @@ export const normal = () => (
 );
 
 export const warning = () => (
-  <CommitCircle numberOfCommits={3} highlightColor={colour.warning}/>
+  <CommitCircle numberOfCommits={3} highlightColor={colours.warning}/>
 );
 
 export const danger = () => (
-  <CommitCircle numberOfCommits={20} highlightColor={colour.danger}/>
+  <CommitCircle numberOfCommits={20} highlightColor={colours.danger}/>
 );

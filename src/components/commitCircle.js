@@ -1,5 +1,6 @@
 import React from 'react';
-import {primary, shapeUnimportant, fontFamily} from "../colours";
+import {colours, fonts} from "../style";
+import {Circle} from "./circle";
 
 export class CommitCircle extends React.Component {
 
@@ -10,27 +11,17 @@ export class CommitCircle extends React.Component {
 
     render() {
         return (
-            <div style={{
-                width: 100,
-                height: 100,
-                borderRadius: 100/2,
-                borderStyle: 'solid',
-                borderColor: this.props.highlightColor,
-                borderWidth: 2,
-                backgroundColor: shapeUnimportant,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-            }}>
+            <Circle highlightColor={this.props.highlightColor}>
                 <p style={{
-                    fontFamily: fontFamily,
+                    fontFamily: fonts.fontFamily,
                     textAlign: 'center',
-                    color: this.props.highlightColor==='transparent' ? primary : this.props.highlightColor,
+                    color: this.props.highlightColor === 'transparent' ? colours.primary : this.props.highlightColor,
                     lineHeight: '100%',
                 }}>
-                    <div style={{fontSize: '2.5em'}}>{this.props.numberOfCommits}</div><br/>commits
+                    <div style={{fontSize: '2.5em'}}>{this.props.numberOfCommits}</div>
+                    <br/>commits
                 </p>
-            </div>
+            </Circle>
         )
     }
 }
