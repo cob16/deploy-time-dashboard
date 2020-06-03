@@ -11,6 +11,10 @@ export const normal = () => (
   <CommitCircle/>
 );
 
+export const nonPlural = () => (
+    <CommitCircle numberOfCommits={1}/>
+);
+
 export const warning = () => (
   <CommitCircle numberOfCommits={3} highlightColor={colours.warning}/>
 );

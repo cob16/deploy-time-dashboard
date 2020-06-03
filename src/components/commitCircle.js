@@ -10,17 +10,19 @@ export class CommitCircle extends React.Component {
     }
 
     render() {
+        let subtitle = this.props.numberOfCommits === 1 ? 'commit' : 'commits'
+
         return (
             <Circle borderColor={this.props.highlightColor}>
-                <p style={{
+                <div style={{
                     fontFamily: fonts.fontFamily,
                     textAlign: 'center',
                     color: this.props.highlightColor === 'transparent' ? colours.primary : this.props.highlightColor,
                     lineHeight: '100%',
                 }}>
                     <div style={{fontSize: '2.5em'}}>{this.props.numberOfCommits}</div>
-                    <br/>commits
-                </p>
+                    <br/>{subtitle}
+                </div>
             </Circle>
         )
     }
