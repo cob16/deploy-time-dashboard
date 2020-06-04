@@ -1,6 +1,6 @@
 import React from 'react';
-import { CommitCircle } from "../components/commitCircle";
-import { colours } from "../style" ;
+import {CommitCircle} from "../components/commitCircle";
+import {colours} from "../style";
 
 export default {
   title: 'Commit Circle',

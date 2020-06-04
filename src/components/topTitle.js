@@ -9,8 +9,15 @@ export class TopTitle extends React.Component {
 
     render() {
         return (
-            <div style={{display: 'inline-block'}}>
-                <p style={{textAlign: 'center',
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                flexWrap: 'wrap',
+            }}>
+                <p style={{
+                    display:' inline-block',
+                    width: '100%',
+                    textAlign: 'center',
                     color: colours.primary,
                     fontFamily: fonts.fontFamily,
                     textTransform: 'capitalize',
