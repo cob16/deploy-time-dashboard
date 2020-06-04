@@ -20,7 +20,7 @@ export class CommitCircle extends React.Component {
                     color: this.props.highlightColor === 'transparent' ? colours.primary : this.props.highlightColor,
                     lineHeight: '100%',
                 }}>
-                    <div style={{fontSize: '2.5em'}}>{this.props.numberOfCommits}</div>
+                    <div style={{fontSize: fonts.size.number}}>{this.props.numberOfCommits}</div>
                     <br/>{subtitle}
                 </div>
             </Circle>

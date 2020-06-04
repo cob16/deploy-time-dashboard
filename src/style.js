@@ -14,6 +14,13 @@ export const colours = {
 
 const fontFamily = 'Arial, sans-serif';
 
+const fontSize = {
+    title: '1.75em',
+    number: '2.5em',
+}
+
+
 export const fonts = {
-    fontFamily
+    fontFamily,
+    size: fontSize
 }
