@@ -1,14 +1,17 @@
 const danger = '#ff5555';
 const warning = '#ffb86c';
 const primary = '#f8f8f2';
-const shapeUnimportant = '#44475a';
+const shape = '#44475a';
+const shapeHighlight = '#6272a4';
+
 const background = '#282a36';
 
 export const colours = {
     danger,
     warning,
     primary,
-    shapeUnimportant,
+    shape,
+    shapeHighlight,
     background,
 }
 

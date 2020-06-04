@@ -9,8 +9,8 @@ darkWithPalateColours.textColor = colours.primary
 darkWithPalateColours.colorPrimary = colours.primary
 darkWithPalateColours.barTextColor = colours.primary
 
-darkWithPalateColours.appBg = colours.shapeUnimportant
-darkWithPalateColours.colorSecondary = colours.shapeUnimportant
+darkWithPalateColours.appBg = colours.shape
+darkWithPalateColours.colorSecondary = colours.shape
 
 darkWithPalateColours.appContentBg = colours.background
 darkWithPalateColours.textInverseColor = colours.background

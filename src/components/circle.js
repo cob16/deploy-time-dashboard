@@ -5,7 +5,7 @@ export class Circle extends React.Component {
 
     static defaultProps = {
         borderColor: 'transparent',
-        backgroundColor: colours.shapeUnimportant
+        backgroundColor: colours.shape
     }
 
     render() {
